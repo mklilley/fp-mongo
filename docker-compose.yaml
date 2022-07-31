@@ -6,3 +6,8 @@ services:
     image: mongo:latest
     volumes:
       - ./scripts/:/code
+      - "dbdata:/data/db"
+      - "dbconfig:/data/configdb"
+volumes:
+  dbdata:
+  dbconfig:
